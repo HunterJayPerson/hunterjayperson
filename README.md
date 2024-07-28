@@ -1,4 +1,4 @@
-## This is the public facing, static version, of my personal website for us with Github Pages.
+This is the public facing, static version, of my personal website for us with Github Pages.
 
 <!--
 **HunterJayPerson/hunterjayperson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
