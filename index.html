@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Jay - Personal Website</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <h2 style="text-align: center;">Hunter Jay</h2>
+
+    
+
+    <section id="profile" class="profile-container">
+    <div class="profile-content">
+        <p>I’m an engineer and entrepreneur trying to make sure AI is developed without killing everybody. I was born in 1996 and grew up in western Sydney, Australia. My Dad is a plasterer, and my Mum a bookkeeper.<br><br>I am atheist, vegan, disappointingly AMAB, tall and lanky, and have ‘traces of aspergers’ according to my childhood school. Politically I lean libertarian, but no label really fits. My favourite media includes Feynman’s autobiographies, HPMOR, Legally Blonde the Musical, and Magic Sword. I’ve worked mainly as a CEO and software &amp; robotics engineer, but have also had various gigs as an fast food cook, actor, science tutor, children’s entertainer, video editor, and drag queen.<br><br>In 2016, I was studying Physics &amp; Mathematics at USyd when I realised that superintelligence would become the most important thing for humanity to get right in my lifetime. I switched my major to Computer Science, and began working on generating resources and knowledge that could be useful for aligning superintelligence, on the margin. I’ve been doing that ever since.<br><br>Please feel free to contact me at hunterjaypersonal@gmail.com</p>
+        
+        <div id="social-links">
+            <ul>
+                
+                    <li><a href="https://www.linkedin.com/in/hunterjay/">LinkedIn</a></li>
+                
+                
+                
+                    <li><a href="https://simplythought.substack.com/">Substack</a></li>
+                
+                
+                    <li><a href="https://x.com/HunterJayPerson">Twitter</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    
+    
+        <a href="https://www.linkedin.com/in/hunterjay/" class="profile-photo-container">
+            <img class="profile-photo" src="/media/profile_photos/HeadshotHunterJay.png" alt="Hunter Jay">
+        </a>
+    
+</section>
+
+    <hr>
+
+    <section id="blog">
+        <h2 style="text-align: center; font-family: 'Comic Sans MS', cursive; color: #FF00FF; text-shadow: 2px 2px #00FFFF; animation: blink 1s infinite;">
+            <marquee behavior="alternate" scrollamount="5">Blog</marquee>
+        </h2>
+        <style>
+            @keyframes blink {
+                0% { opacity: 1; }
+                50% { opacity: 0.5; }
+                100% { opacity: 1; }
+            }
+        </style>
+
+        <div id="substack-feed-embed"></div>
+        <script>
+        window.SubstackFeedWidget = {
+            substackUrl: "simplythought.substack.com",
+            posts: 12,
+            hidden: ["image"],
+            colors: {
+                primary: "#a1cdff",
+                secondary: "#e0e0e0",
+                background: "#121212",
+            }
+        };
+        </script>
+        <script src="https://substackapi.com/embeds/feed.js" async></script>
+        <style>
+            #substack-feed-embed a {
+                transition: color 0.3s ease;
+            }
+            #substack-feed-embed a:hover {
+                text-decoration: underline;
+            }
+        </style>
+
+        <hr>
+    </section>
+
+
+
+    <section id="projects">
+        <h2 style="text-align: center; font-family: 'Comic Sans MS', cursive; color: #00ff84; text-shadow: 2px 2px #3300ff; animation: blink 1s infinite;">
+            <marquee behavior="alternate" scrollamount="5">Projects</marquee>
+        </h2>
+        <style>
+            @keyframes blink {
+                0% { opacity: 1; }
+                50% { opacity: 0.5; }
+                100% { opacity: 1; }
+            }
+        </style>
+        <p></p>
+        
+            <article class="project">
+    <div class="project-image-container">
+        <a href="http://www.riperobotics.com" class="project-image-container">
+            
+                <img class="project-image" src="/media/project_images/RipeRoboticsProjectPhoto.jpg" alt="Ripe Robotics">
+            
+        </a>
+    </div>
+    <div class="project-details">
+        <h3><a href="http://www.riperobotics.com">Ripe Robotics</a></h3>
+        <p class="project-description">description todo</p>
+    </div>
+</article>
+        
+            <article class="project">
+    <div class="project-image-container">
+        <a href="http://todo.com" class="project-image-container">
+            
+                <img class="project-image" src="/media/project_images/outfox_logo_square_white.png" alt="Outfox Stories">
+            
+        </a>
+    </div>
+    <div class="project-details">
+        <h3><a href="http://todo.com">Outfox Stories</a></h3>
+        <p class="project-description">description todo</p>
+    </div>
+</article>
+        
+            <article class="project">
+    <div class="project-image-container">
+        <a href="http://todo.com" class="project-image-container">
+            
+                <img class="project-image" src="/media/project_images/FlagWarsFeatureGraphicSizedSquare.png" alt="FlagWars">
+            
+        </a>
+    </div>
+    <div class="project-details">
+        <h3><a href="http://todo.com">FlagWars</a></h3>
+        <p class="project-description">description todo</p>
+    </div>
+</article>
+        
+            <article class="project">
+    <div class="project-image-container">
+        <a href="https://www.youtube.com/watch?v=SPQycBlbTRw" class="project-image-container">
+            
+                <img class="project-image" src="/media/project_images/stucco.png" alt="Stucco - Student Housing Cooperative">
+            
+        </a>
+    </div>
+    <div class="project-details">
+        <h3><a href="https://www.youtube.com/watch?v=SPQycBlbTRw">Stucco - Student Housing Cooperative</a></h3>
+        <p class="project-description">Description TODO -- mainly talking about the film.</p>
+    </div>
+</article>
+        
+    </section>
+
+    
+     
+
+</body>
+</html>
