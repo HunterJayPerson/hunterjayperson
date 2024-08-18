@@ -44,7 +44,7 @@
     <hr>
 
     <section id="blog">
-        <h2 style="text-align: center; font-family: 'Comic Sans MS', cursive; color: #FF00FF; text-shadow: 2px 2px #00FFFF; animation: blink 1s infinite;">
+        <h2 style="text-align: center; font-family: 'Comic Sans MS', cursive; color: #FF00FF; text-shadow: 2px 2px #00FFFF; animation: blink 1s infinite; margin-bottom: 0;">
             <marquee behavior="alternate" scrollamount="5">Blog</marquee>
         </h2>
         <style>
@@ -55,21 +55,56 @@
             }
         </style>
 
+        <!-- Display a direct link to the Substack and a loading indicator -->
+        <span id="substack-load-failed" style="display: none;">
+            <p id="loading-message">Failed to load Substack feed. You can visit the blog directly at <a href="https://simplythought.substack.com" target="_blank" rel="noopener noreferrer">Simply Thought on Substack</a></p>
+        </span>
+
         <div id="substack-feed-embed"></div>
         <script>
         window.SubstackFeedWidget = {
             substackUrl: "simplythought.substack.com",
             posts: 12,
-            hidden: ["image"],
+            hidden: ["image", "reactions", "comments"],
             colors: {
                 primary: "#a1cdff",
                 secondary: "#e0e0e0",
                 background: "#121212",
             }
         };
+
+        // Function to handle the loading of the Substack feed
+        function handleSubstackLoad() {
+            document.getElementById('substack-load-failed').style.display = 'none';
+            document.getElementById('substack-feed-embed').style.display = 'block';
+        }
+
+        // Function to handle loading failure
+        function handleSubstackError() {
+            document.getElementById('substack-load-failed').style.display = 'block';
+            document.getElementById('substack-feed-embed').style.display = 'none';
+        }
+
+        // Load the Substack feed script
+        var script = document.createElement('script');
+        script.src = "https://substackapi.com/embeds/feed.js";
+        script.async = true;
+        script.onload = handleSubstackLoad;
+        script.onerror = handleSubstackError;
+        document.body.appendChild(script);
         </script>
-        <script src="https://substackapi.com/embeds/feed.js" async></script>
         <style>
+            #substack-load-failed {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            #loading-message {
+                color: #e0e0e0;
+                font-style: italic;
+            }
+            #substack-feed-embed {
+                display: none;
+            }
             #substack-feed-embed a {
                 transition: color 0.3s ease;
             }
