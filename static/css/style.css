@@ -90,8 +90,8 @@ header {
 }
 
 .project-image-container {
-    width: 200px;
-    height: 200px;
+    width: 128px;
+    height: 128px;
     flex-shrink: 0;
     margin-top: 5px;
     overflow: hidden;
