@@ -57,63 +57,106 @@
             }
         </style>
 
-        <!-- Display a direct link to the Substack and a loading indicator -->
-        <span id="substack-load-failed" style="display: none;">
-            <p id="loading-message">Failed to load Substack feed. You can visit the blog directly at <a href="https://simplythought.substack.com" target="_blank" rel="noopener noreferrer">Simply Thought on Substack</a></p>
-        </span>
-
-        <div id="substack-feed-embed"></div>
-        <script>
-        window.SubstackFeedWidget = {
-            substackUrl: "simplythought.substack.com",
-            posts: 12,
-            hidden: ["image", "reactions", "comments"],
-            colors: {
-                primary: "#a1cdff",
-                secondary: "#e0e0e0",
-                background: "#121212",
-            }
-        };
-
-        // Function to handle the loading of the Substack feed
-        function handleSubstackLoad() {
-            document.getElementById('substack-load-failed').style.display = 'none';
-            document.getElementById('substack-feed-embed').style.display = 'block';
-        }
-
-        // Function to handle loading failure
-        function handleSubstackError() {
-            document.getElementById('substack-load-failed').style.display = 'block';
-            document.getElementById('substack-feed-embed').style.display = 'none';
-        }
-
-        // Load the Substack feed script
-        var script = document.createElement('script');
-        script.src = "https://substackapi.com/embeds/feed.js";
-        script.async = true;
-        script.onload = handleSubstackLoad;
-        script.onerror = handleSubstackError;
-        document.body.appendChild(script);
-        </script>
-        <style>
-            #substack-load-failed {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            #loading-message {
-                color: #e0e0e0;
-                font-style: italic;
-            }
-            #substack-feed-embed {
-                display: none;
-            }
-            #substack-feed-embed a {
-                transition: color 0.3s ease;
-            }
-            #substack-feed-embed a:hover {
-                text-decoration: underline;
-            }
-        </style>
+        <div class="substack-feed">
+            
+                <ul class="substack-list">
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/grading-ai-predictions-1-year-and" target="_blank" rel="noopener noreferrer">
+                                Grading AI Predictions 1 Year &amp; 3 months in!
+                            </a>
+                            
+                                <div class="substack-date">Jan 1, 2025</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/a-response-to-proposals-for-ai-legislation" target="_blank" rel="noopener noreferrer">
+                                A Response to Proposals for AI Legislation in Australia
+                            </a>
+                            
+                                <div class="substack-date">Sep 29, 2024</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/superintelligent-ai-is-possible-in" target="_blank" rel="noopener noreferrer">
+                                Superintelligent AI is possible in the 2020s
+                            </a>
+                            
+                                <div class="substack-date">Aug 9, 2024</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/dear-senators-ai-is-an-existential" target="_blank" rel="noopener noreferrer">
+                                Dear Senators, AI is an existential risk
+                            </a>
+                            
+                                <div class="substack-date">Aug 4, 2024</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/on-automated-self-reflection-and" target="_blank" rel="noopener noreferrer">
+                                On Automated Self-Reflection &amp; Search
+                            </a>
+                            
+                                <div class="substack-date">Jul 14, 2024</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/entering-a-flow-state-for-work" target="_blank" rel="noopener noreferrer">
+                                Entering A Flow State for Work
+                            </a>
+                            
+                                <div class="substack-date">Jul 3, 2024</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/in-2024-its-easier-to-learn-when" target="_blank" rel="noopener noreferrer">
+                                In 2024, it&#x27;s easier to learn when you are alone
+                            </a>
+                            
+                                <div class="substack-date">Mar 2, 2024</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/how-i-learn-things" target="_blank" rel="noopener noreferrer">
+                                How I Learn Things
+                            </a>
+                            
+                                <div class="substack-date">Feb 18, 2024</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/my-ai-predictions-2023-2026" target="_blank" rel="noopener noreferrer">
+                                My AI Predictions 2023 - 2026
+                            </a>
+                            
+                                <div class="substack-date">Dec 10, 2023</div>
+                            
+                        </li>
+                    
+                        <li class="substack-item">
+                            <a class="substack-title" href="https://simplythought.substack.com/p/why-are-female-athletes-paid-so-much" target="_blank" rel="noopener noreferrer">
+                                Why Are Female Athletes Paid Differently To Male Ones?
+                            </a>
+                            
+                                <div class="substack-date">Dec 7, 2023</div>
+                            
+                        </li>
+                    
+                </ul>
+            
+            <div class="substack-more">
+                <a href="https://simplythought.substack.com" target="_blank" rel="noopener noreferrer"><strong>See more &rarr;</strong></a>
+            </div>
+        </div>
 
         <hr>
     </section>
@@ -157,7 +200,7 @@
     </div>
     <div class="project-details">
         <h3><a href="">AI Fiction Project</a></h3>
-        <p class="project-description">I run a little website for writing &amp; generating stories using LLMs. It’s basically a GPT-wrapper, but there’s lots of clever prompting and UI tricks going on behind the scenes to try and get each user a story optimised for users particular interests.</p>
+        <p class="project-description">I run a little website for writing &amp; generating stories using LLMs. It&#x27;s slowly been ticking up in the background since around 2021, and now does about $50k ARR.</p>
     </div>
 </article>
         

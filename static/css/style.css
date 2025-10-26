@@ -129,6 +129,48 @@ header {
     margin-bottom: 1rem;
 }
 
+/* Substack feed styles */
+.substack-feed {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 0 8px 0;
+}
+
+.substack-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+}
+
+.substack-item {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.substack-item:last-child {
+    border-bottom: none;
+}
+
+.substack-title {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.substack-title:hover {
+    text-decoration: underline;
+}
+
+.substack-date {
+    color: #888;
+    font-size: 0.85em;
+    margin-top: 2px;
+}
+
+.substack-more {
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* For narrow screens, adjust sizes but maintain layout */
 @media (max-width: 640px) {
     .profile-container {
